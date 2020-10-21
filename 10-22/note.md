@@ -6,6 +6,35 @@
 
 对内容的建议、勘误: 联系[我](mailto:yanyx1999@pku.edu.cn)或其他助教. 同时建议大家在 Github 上提 issue.
 
+## Python 解释器的工作方式
+
+每次读入一行代码并处理. 默认一个语句不能换行.
+
+一些特殊情况:
+
+- 续行符 `\`, 说明下一行是本行的继续.
+- 未配对的括号, 也认为下一行是本行的继续.
+- 如所读行是某复杂结构 (例如 def, for, while...) 的头部, 会根据代码的退格形式继续读完整个结构, 之后再处理.
+
+例子:
+
+```python
+# 语句不能换行, 会报错
+if a>0 and b>0 and c>0 and a+b>c
+    and a+c>b and b+c>a:
+    pass
+
+# 括号不匹配自动延伸
+if (a>0 and b>0 and c>0 and a+b>c
+    and a+c>b and b+c>a):
+    pass
+
+# 用续行符号
+if a>0 and b>0 and c>0 and a+b>c\
+    and a+c>b and b+c>a:
+    pass
+```
+
 ## 程序的测试与调试
 
 程序的测试与调试是开发中重要的一环. 通过测试与调试, 我们可以确认程序能正常工作, 满足需求.

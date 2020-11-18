@@ -91,7 +91,7 @@ String and list are similiar in many ways.
 - Operations: `+`, `*`.
 - Slicing. 
 - Used in iterations.
-- Other built-in functions: `cmp`, `count`, 'max', `index`, `sort` etc.
+- Other built-in functions: `cmp`, `count`, `max`, `index`, `sort` etc.
 
 Conversion between string and list:
 
@@ -104,7 +104,7 @@ Conversion between string and list:
 
 ### Formated String
 
-Use `str.format` to get formated strings. My suggestio is you should use it instead of the old-style with `%`. 
+Use `str.format` to get formated strings. My suggestion is you should use it instead of the old-style with `%`. 
 
 ```python
 >>> '{:.2f} {:06.2f}'.format(1.5, 1.5)
@@ -141,7 +141,7 @@ We find `x` and `y` are not changed indepedently. And in fact, they are referrin
 [1, 2]
 ```
 
-The function `copy` is enough for most cases, but not for the case when you have lists inside a list.
+The function `copy` is enough for most cases, but not for the case when we have lists inside a list.
 
 ```python
 >>> x = [[]]

@@ -172,6 +172,11 @@ Copying a list is not required in the first hald semester. **But if you really n
 
 ### Recursion
 
+Two things to consider:
+
+1. Divide a problem into sub-problems.
+2. Where is the "boundary"? In other word, when the recursion is stopped? **Make sure the recursion can stop.**
+
 ## Excercise Selection
 
 ### Week8 Excercise - Meili Number
